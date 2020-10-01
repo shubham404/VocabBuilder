@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewWord">
+
+    <TextView
+        android:id="@+id/text_box_addword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Type the new word along with its meaning in the resective fields guven below"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@id/word_to_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/word_to_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="type the word you want ot enter here"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@id/word_definition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_box_addword" />
+
+    <EditText
+        android:id="@+id/word_definition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="type the definition of the above entered word"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@id/add_the_word_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/word_to_add" />
+
+    <Button
+        android:id="@+id/add_the_word_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="letsAddTheWord"
+        android:text="Add new word"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/word_definition" />
+</androidx.constraintlayout.widget.ConstraintLayout>

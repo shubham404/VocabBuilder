@@ -1,0 +1,6 @@
+abacus	frame with balls for calculating  
+aberration	straying away from normal     
+eddy	circular movement
+edible	fit to be eaten
+squat	to crouch
+stanch	to stop the flow of a fluid
